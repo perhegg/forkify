@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: ['@babel/polyfill', './src/js/index.js'],
@@ -8,8 +8,7 @@ module.exports = {
         filename: 'js/bundle.js'
     },
     devServer: {
-        contentBase: './dist',
-        watchContentBase: true
+        contentBase: './dist'
     },
     plugins: [
         new HtmlWebpackPlugin({
